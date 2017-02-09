@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutolayoutDemo4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="melayer.png" translatesAutoresizingMaskIntoConstraints="NO" id="PbX-kF-305">
+                                <rect key="frame" x="16" y="28" width="288" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Eau-DL-rps"/>
+                                    <constraint firstAttribute="height" constant="288" id="rPn-g7-kNK"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCC-Aj-DZg">
+                                <rect key="frame" x="16" y="341" width="288" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.8842979648" blue="0.8617710408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-rN-g77">
+                                <rect key="frame" x="16" y="395" width="288" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.8842979648" blue="0.8617710408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cn-dD-06R">
+                                <rect key="frame" x="101" y="448" width="118" height="30"/>
+                                <color key="backgroundColor" red="0.58695375319999998" green="0.6305897385" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Xqf-IH-7n4"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pCC-Aj-DZg" secondAttribute="trailing" id="8wE-QO-zji"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pCC-Aj-DZg" secondAttribute="leading" id="BzA-cG-d1j"/>
+                            <constraint firstItem="2cn-dD-06R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiY-CJ-rSY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uVx-rN-g77" secondAttribute="leading" id="l5f-Me-KUN"/>
+                            <constraint firstItem="uVx-rN-g77" firstAttribute="top" secondItem="pCC-Aj-DZg" secondAttribute="bottom" constant="24" id="oJo-GQ-ZV4"/>
+                            <constraint firstItem="PbX-kF-305" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oZt-CW-rOw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uVx-rN-g77" secondAttribute="trailing" id="uq9-uR-pnY"/>
+                            <constraint firstItem="pCC-Aj-DZg" firstAttribute="top" secondItem="PbX-kF-305" secondAttribute="bottom" constant="25" id="zMP-G1-kvJ"/>
+                            <constraint firstItem="2cn-dD-06R" firstAttribute="top" secondItem="uVx-rN-g77" secondAttribute="bottom" constant="23" id="zjI-9g-nuT"/>
+                            <constraint firstItem="PbX-kF-305" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjJ-sC-Z2Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="melayer.png" width="210" height="210"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Autolayouttask3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="userName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQZ-xX-4Lr">
+                                <rect key="frame" x="35" y="347" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxV-TF-GKh">
+                                <rect key="frame" x="35" y="425" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-ro-pFx">
+                                <rect key="frame" x="35" y="49" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="hkU-30-5Ny"/>
+                                    <constraint firstAttribute="height" constant="250" id="y9U-6T-K6a"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g8-wG-MVD">
+                                <rect key="frame" x="110" y="503" width="100" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lLB-ro-pFx" secondAttribute="trailing" constant="19" id="2R6-5o-k3y"/>
+                            <constraint firstItem="yxV-TF-GKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="4Ha-MN-9Ux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oQZ-xX-4Lr" secondAttribute="trailing" constant="19" id="ANS-eY-6H7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yxV-TF-GKh" secondAttribute="trailing" constant="19" id="H4T-pL-0iy"/>
+                            <constraint firstItem="yxV-TF-GKh" firstAttribute="top" secondItem="oQZ-xX-4Lr" secondAttribute="bottom" constant="48" id="Nch-Hw-4bb"/>
+                            <constraint firstItem="oQZ-xX-4Lr" firstAttribute="top" secondItem="lLB-ro-pFx" secondAttribute="bottom" constant="48" id="PTE-ll-8hP"/>
+                            <constraint firstItem="oQZ-xX-4Lr" firstAttribute="top" secondItem="lLB-ro-pFx" secondAttribute="bottom" constant="48" id="SyT-Fs-rUd"/>
+                            <constraint firstItem="8g8-wG-MVD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="aZD-SL-6lP"/>
+                            <constraint firstItem="lLB-ro-pFx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="bs1-Rk-2Bo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8g8-wG-MVD" secondAttribute="bottom" constant="36" id="ipn-Li-kI8"/>
+                            <constraint firstItem="oQZ-xX-4Lr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="kEn-Ng-A1g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8g8-wG-MVD" secondAttribute="trailing" constant="94" id="vmb-JV-CBD"/>
+                            <constraint firstItem="lLB-ro-pFx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="zET-fH-RW9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="26.408450704225352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download.jpeg" width="243" height="207"/>
+    </resources>
+</document>
