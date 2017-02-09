@@ -23,6 +23,7 @@ func sumOfOdd(array : Array<Int>)
         if oddno % 2 == 1
         {
           sum += oddno
+            
         }
     }
     print(sum)

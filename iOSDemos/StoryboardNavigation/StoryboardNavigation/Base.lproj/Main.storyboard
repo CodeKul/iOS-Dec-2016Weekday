@@ -55,9 +55,6 @@
                                 <state key="normal" title="Forget Password">
                                     <color key="titleColor" red="0.16077044609999999" green="0.15331244469999999" blue="0.51869416239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="vNR-pG-ihl"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plU-yt-ASb">
                                 <rect key="frame" x="125" y="259" width="82" height="30"/>

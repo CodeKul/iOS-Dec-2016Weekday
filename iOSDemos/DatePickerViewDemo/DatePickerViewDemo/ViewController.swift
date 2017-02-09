@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy : hh:mm:ss a"
+        dateFormatter.dateFormat = "dd-MM-yyyy : HH:mm:ss"
         let dateStr = dateFormatter.string(from:sender.date)
         dateLabel.text = dateStr;
     }

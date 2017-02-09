@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet var myLbl: UILabel!
     var arrData1 : Array<String> = []
@@ -19,10 +19,18 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     var str2 = ""
     var str3 = ""
     
+    var pickerView : UIPickerView?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pickerView = UIPickerView(frame: CGRect(x: 0, y: 176, width: 320, height: 216))
+        
+        pickerView?.dataSource = self
+        pickerView?.delegate = self
+        
+        self.view.addSubview(pickerView!)
         
         arrData1 = Array(arrayLiteral: "Manish", "Shraddha", "Varun","Aniruddha","Nikhil")
         arrData2 = ["Yamaha","RE","KTM","Benilli","BMW","TVS"]
