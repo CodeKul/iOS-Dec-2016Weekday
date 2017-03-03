@@ -60,8 +60,8 @@
 				875224541E41AB6000E8B2E1 /* HomeViewController.swift */,
 				875224641E41ADDC00E8B2E1 /* LoginViewController.swift */,
 				875224661E41AE1C00E8B2E1 /* DetailViewController.swift */,
-				875224591E41AB6000E8B2E1 /* Assets.xcassets */,
 				8752245B1E41AB6000E8B2E1 /* LaunchScreen.storyboard */,
+				875224591E41AB6000E8B2E1 /* Assets.xcassets */,
 				8752245E1E41AB6000E8B2E1 /* Info.plist */,
 			);
 			path = UserDefaultAssignment1;
